@@ -2,17 +2,20 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	outline: none;
+	border: none;
 }
 
 body {
 	display: flex;
 	justify-content: center;
 	font-family: 'Poppins', sans-serif;
+	background-color: #F5F5F5;
 }
 
 main {
-	padding: 1rem;
 	margin-top: 3rem;
+	margin-bottom: 3rem;
 }
 
 .header {
@@ -21,8 +24,19 @@ main {
 	letter-spacing: 1px;
 }
 
+#survey-form {
+	background-color: #000;
+	padding: 1.8rem;
+	border-radius: 10px;
+	color: #FFF;
+	box-shadow: 0px 0px 5px 0px #000;
+}
+
+.form-group { margin-bottom: 1.2rem }
+
 .form-group label {
 	display: inline-block;
+	margin-bottom: 0.5rem;
 }
 
 .form-group input,
@@ -30,5 +44,35 @@ main {
 .form-group select {
 	display: block;
 	width: 100%;
-	padding: 0.5rem;
+	padding: 0.8rem;
+	border-radius: 5px;
+}
+
+.input-group input {
+	margin-right: 1rem;
+	margin-bottom: 0.5rem;
+}
+
+.mb-1 {
+	margin-bottom: 1rem;
+}
+
+.submit-btn {
+	padding: 0.8rem 3rem;
+	font-weight: bold;
+	font-size: 0.9rem;
+	letter-spacing: 1px;
+	box-sizing: border-box;
+	border-radius: 5px;
+	background-color: #F5F5F5;
+	cursor: pointer;
+}
+
+.submit-btn:hover {
+	background-color: #8f8e8d;
+	color: #FFF;
+}
+
+.submit-btn:active {
+	background-color: #000;
 }
